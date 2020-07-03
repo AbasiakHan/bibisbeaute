@@ -309,11 +309,16 @@ main {
   /* font-weight: 600; */
 }
 
-/* 
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .social-icons li {
   display: inline-block;
   margin-right: 25px;
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
 .social-icons li a i {
@@ -325,10 +330,6 @@ main {
   color: rgb(214, 216, 120);
   transition-delay: 0.3s;
   transition: ease-in-out 0.5s;
-}
-
-.social-icons {
-  margin: 0 auto;
 }
 
 .social-icons .mobile-wa {
@@ -356,7 +357,7 @@ main {
 .footer-cols .social-icons a:visited {
   text-decoration: none;
   color: #000000;
-} */
+}
 
 /* date */
 .date {
