@@ -365,8 +365,8 @@ main {
   margin-bottom: 50px;
   justify-content: center;
   align-items: center;
-  font-family: var(--roboto);
-  font-size: 2rem;
+  font-family: var(--lato);
+  font-size: 1.3rem;
 }
 
 #day {
@@ -384,6 +384,6 @@ main {
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 0.8px solid #000000;
-  width: 90px;
+  /* border: 0.8px solid #000000; */
+  width: 60px;
 }
