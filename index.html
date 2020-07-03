@@ -1,8 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- favicon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Lato:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@600&family=Open+Sans:wght@300;600&family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Lato:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@600;400&family=Open+Sans:wght@300;600&family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
@@ -14,32 +96,32 @@
     <script src="js/JQuery3.3.1.js"></script>
     <script src="js/lightslider.js"></script>
 
-    <title>Document</title>
+    <title>Bibisbeauté | Beauty & Makeup</title>
   </head>
   <body>
-    <main>
-      <header class="header home" role="banner">
-        <div class="header-upper">
-          <!-- menu button burger -->
-          <div class="menu-wrap">
-            <div class="menu-btn">
-              <div class="menu-btn__burger"></div>
-            </div>
-          </div>
-          <!-- menu button burger end -->
-          <div class="header-logo">
-            <a href="https://www.bibisbeaute.com">
-              <span class="icon-bibisbeaute"></span
-            ></a>
+    <header class="header home" role="banner">
+      <div class="header-upper">
+        <!-- menu button burger -->
+        <div class="menu-wrap">
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
           </div>
         </div>
-        <!-- sliding promo  -->
-        <div class="header-announce">
-          <p><span>promo:</span>30% off for bookings 30 days in advance.</p>
+        <!-- menu button burger end -->
+        <div class="header-logo">
+          <a href="https://www.bibisbeaute.com">
+            <span class="icon-bibisbeaute"></span
+          ></a>
         </div>
-        <!-- sliding promo -->
-      </header>
+      </div>
+      <!-- sliding promo  -->
+      <div class="header-announce">
+        <p><span>promo:</span>30% off for bookings 30 days in advance.</p>
+      </div>
+      <!-- sliding promo -->
+    </header>
 
+    <main>
       <div class="container">
         <!-- slider -->
         <ul id="autoWidth" class="cs-hidden">
@@ -57,7 +139,7 @@
                   <a href="#">
                     <div class="news-item-title">gele tying</div>
                     <div class="static-button">
-                      <span class="button-link white">
+                      <span class="button-link">
                         <span class="button-link-content">
                           <span class="button-link__title">DISCOVER</span>
                         </span>
@@ -246,22 +328,117 @@
         </ul>
       </div>
     </main>
-    <section>
+    <section id="gele">
       gele tying
     </section>
-    <section>
+    <section id="eyebrow">
       eyebrow threading
     </section>
-    <section>
+    <section id="eyelash">
       eyelash extension
     </section>
-    <section>
+    <section id="makeup">
       makeup
     </section>
-    <section>
+    <section id="training">
       training
-      <span class="icon-bibisbeaute"></span>
     </section>
+    <footer class="footer-container">
+      <div class="row">
+        <div class="footer-cols">
+          <!-- media store -->
+          <ul class="store">
+            <li class="footer-cols-head"><strong>BOOKING</strong></li>
+            <li><a href="#">Book a Session</a></li>
+            <li><a href="#">Cancel a booked session</a></li>
+          </ul>
+          <!-- media store end -->
+          <!-- contact us -->
+
+          <ul class="contacto">
+            <li class="footer-cols-head"><strong>CONTACT US</strong></li>
+            <li>
+              <a href="tel:+234-8076184819"
+                ><i class="ion-android-call"></i> 08076184819</a
+              >
+            </li>
+            <li>
+              <a href="mailto:hotrilorin@gmail.com"
+                ><i class="ion-android-mail"></i> bibisbeaute@gmail.com</a
+              >
+            </li>
+
+            <li>
+              <i class="ion-android-home"></i> 2, Big House Street, <br />Old
+              King's Road, Blast<br />KK<br />
+              <a
+                class="popup-gmaps gmap"
+                href="https://maps.google.com/maps?q=2+James+Oni+Road,+Off+Old+Jebba+Road,+Agric+Ilorin&amp;hl=en&amp;t=v&amp;"
+              >
+                <i class="ion-ios-location"></i> Open Google Map</a
+              >
+            </li>
+          </ul>
+
+          <!-- contact us end -->
+          <!-- service times -->
+          <ul>
+            <li class="footer-cols-head"><strong>SERVICE TIMES</strong></li>
+            <li>Sundays at 8:00am</li>
+            <li>Wednesdays at 6:00pm</li>
+          </ul>
+          <!-- service times end -->
+          <!-- social media -->
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/houseontherockilorin"
+                ><div><i class="ion-social-facebook fb"></i></div
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="ion-social-twitter tw"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hotrilorin"
+                ><i class="ion-social-instagram-outline ig"></i
+              ></a>
+            </li>
+            <li class="mobile-wa">
+              <a href="https://wa.link/447efb">
+                <i class="ion-social-whatsapp wa"></i
+              ></a>
+            </li>
+            <li class="desk-wa">
+              <a class="popup-modal" href="#open-modal">
+                <i class="ion-social-whatsapp wa"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="html-code">
+            <div id="open-modal" class="white-popup-block mfp-hide">
+              <!-- <h1>Modal dialog</h1> -->
+              <img src="/img/wa.link_447efb.png" alt="" />
+              <p>
+                Scan this code from your WhatsApp camera to add us as a contact.
+              </p>
+              <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+            </div>
+          </div>
+          <!-- social media end -->
+        </div>
+      </div>
+    </footer>
+    <div class="footer-copyright">
+      <div class="footer-copy">
+        <div class="footer-copy-copy">
+          <div>
+            Copyright &copy;2020. Bibisbeauté. All rights reserved.
+          </div>
+          <div>Dev'd by <a href="abskn-sols.netlify.app">abskn</a></div>
+        </div>
+      </div>
+    </div>
+
     <script src="/js/main.js"></script>
   </body>
 </html>
