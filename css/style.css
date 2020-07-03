@@ -17,10 +17,19 @@
   --robotoCondensed: "Roboto Condensed", sans-serif;
 }
 
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 0px;
 }
+
 ul {
   list-style: none;
 }
@@ -31,14 +40,16 @@ a {
 
 /* header */
 .header {
-	/* margin-left: 0; */
+  /* margin-left: 0; */
   /* display: grid; */
   display: block;
   position: fixed;
-	justify-content: center;
+  justify-content: center;
   top: 0;
   width: 100%;
   z-index: 20;
+  border: 1px solid black;
+  height: 55px;
 }
 
 .header .header-upper {
@@ -50,7 +61,7 @@ a {
 
 .header .header-announce {
   display: none;
-	width: 100%;
+  width: 100%;
   display: block;
   text-align: center;
   background-color: var(--header-back);
@@ -74,9 +85,10 @@ a {
   margin: 0 4rem;
   text-align: center;
   width: 100%;
+  height: 55px;
 }
 
-.header-logo a {
+/* .header-logo a {
   display: flex;
   background-color: transparent;
   line-height: 1.5;
@@ -87,26 +99,37 @@ a {
   fill: #adadad;
   transition: 1s ease-in-out;
   transform: 0.5s;
-}
+} */
 
-.header-logo a {
-  color: #c7bcbc;
-  display: inline-block;
+.header-logo {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-decoration: none;
   width: 60%;
   /* z-index: 20; */
-  padding-top: 0;
 }
 
-.icon {
-  display: inline-block;
+.icon-bibisbeaute {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  line-height: 0;
 }
 
-.icon .logo {
+.icon-bibisbeaute:hover {
+  color: rgb(218, 183, 183);
+  font-size: 12px;
+  line-height: 0;
+  transition: 1s ease-in-out;
+  transform: 0.5s;
+}
+
+/* .icon .logo {
   width: 50%;
   height: 40px;
-}
+} */
 
 .container {
   width: 100%;
@@ -202,7 +225,7 @@ a {
   height: 55px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  /* border: 3px solid rgb(139, 52, 52); */
+  border: 3px solid rgb(139, 52, 52);
 }
 .menu-btn__burger {
   width: 17px;
