@@ -361,8 +361,8 @@ main {
 /* date */
 .date {
   display: grid;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   justify-content: center;
   align-items: center;
   font-family: var(--lato);
@@ -376,6 +376,7 @@ main {
 }
 
 #month {
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,4 +387,26 @@ hr {
   margin-bottom: 10px;
   /* border: 0.8px solid #000000; */
   width: 60px;
+}
+
+#gele {
+  display: block;
+  background: url("/img/banner/gele.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#eyelash {
+  display: block;
+  background: url("/img/banner/eyelash-ext-canvas.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  margin-bottom: 20px;
 }
