@@ -30,3 +30,25 @@ menuBtn.addEventListener("click", () => {
     menuIsOpen = false;
   }
 });
+
+let day = document.querySelector("#day");
+let month = document.querySelector("#month");
+let monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let date = new Date();
+
+day.textContent = date.getDate();
+
+month.textContent = (monthNames[date.getMonth()]);
