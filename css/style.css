@@ -25,9 +25,12 @@ body {
   box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
-  margin: 0px;
-  padding: 0px;
+  background-color: #f3f3f3;
+
 }
 
 ul {
@@ -61,8 +64,8 @@ a {
   width: 100%;
   display: block;
   text-align: center;
-  background-color: var(--header-back);
-  font-family: "Amatic SC", cursive;
+  background-color: #ffcd92;
+  font-family: var(--robotoCondensed);
   font-size: 1rem;
   padding: 10px 0;
 }
@@ -133,6 +136,7 @@ a {
   height: 350px;
   max-height: 100%;
   max-width: 100%;
+  padding: 10px;
 }
 
 .details {
@@ -143,19 +147,20 @@ a {
 }
 
 .news-item-title {
-  padding: 0 0.25rem;
+  padding-top: 1rem;
   margin-bottom: 0.8125rem;
-  font-size: 1.625rem;
-  line-height: 2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.625rem;
+  /* line-height: 2rem; */
   color: black;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .static-button {
   width: 100%;
   font-size: 0.9375rem;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 10px;
   font-family: Montserrat;
   border: 1px solid black;
 }
@@ -204,7 +209,7 @@ a {
   height: 55px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  border: 3px solid rgb(139, 52, 52);
+  /* border: 3px solid rgb(139, 52, 52); */
 }
 .menu-btn__burger {
   width: 17px;
@@ -251,7 +256,7 @@ main {
 
 /* footer */
 .footer-container {
-  display: flex;
+  display: grid;
   max-width: 100%;
   background: #ffcd92;
   font-family: var(--montserrat);
@@ -259,9 +264,9 @@ main {
 }
 
 .footer-container > .row {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
   max-width: 95%;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -287,7 +292,7 @@ main {
   background: #ffcd92;
   font-family: var(--montserrat);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   overflow: hidden;
 }
 
@@ -313,6 +318,8 @@ main {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-icons li {
@@ -410,4 +417,19 @@ hr {
   width: auto;
   height: 300px;
   margin-bottom: 20px;
+}
+#training {
+  display: block;
+  background: url("/img/banner/training.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+/* utilities */
+#open-modal {
+  display: none;
 }
