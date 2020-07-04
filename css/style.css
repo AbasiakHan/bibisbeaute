@@ -433,3 +433,21 @@ hr {
 #open-modal {
   display: none;
 }
+
+/* open modal-form */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+  .social-icons .desk-wa {
+    display: none;
+  }
+
+  .social-icons .mobile-wa {
+    display: block;
+  }
