@@ -25,12 +25,11 @@ body {
   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #f3f3f3;
-
 }
 
 ul {
@@ -60,7 +59,8 @@ a {
   padding: 4px 2.85rem 0;
 }
 
-.header .header-announce {
+.header-announce {
+  margin-top: 55px;
   width: 100%;
   display: block;
   text-align: center;
@@ -70,11 +70,10 @@ a {
   padding: 10px 0;
 }
 
-.header .header-announce p {
+.header-announce p {
   text-transform: uppercase;
 }
-
-.header .header-announce p span {
+.header-announce p span {
   color: blue;
   padding-right: 5px;
 }
@@ -251,7 +250,6 @@ a {
 
 main {
   /* max-width: 95%; */
-  margin-top: 80px;
 }
 
 /* footer */
@@ -434,20 +432,10 @@ hr {
   display: none;
 }
 
-/* open modal-form */
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
+.social-icons .desk-wa {
+  display: none;
 }
 
-  .social-icons .desk-wa {
-    display: none;
-  }
-
-  .social-icons .mobile-wa {
-    display: block;
-  }
+.social-icons .mobile-wa {
+  display: block;
+}

@@ -18,6 +18,12 @@ $(document).ready(function () {
   $("#total").text(autoplaySlider.getTotalSlideCount());
 });
 
+// img pop
+$(".test-popup-link").magnificPopup({
+  type: "image",
+  // other options
+});
+
 // menu
 const menuBtn = document.querySelector(".menu-btn");
 let menuIsOpen = false;
@@ -51,10 +57,6 @@ let date = new Date();
 
 day.textContent = date.getDate();
 
-month.textContent = (monthNames[date.getMonth()]);
+month.textContent = monthNames[date.getMonth()];
 
 // magnificPopup
-$('.open-popup-link').magnificPopup({
-  type: 'inline',
-  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-});
