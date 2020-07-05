@@ -16,6 +16,10 @@ $(document).ready(function () {
     },
   });
   $("#total").text(autoplaySlider.getTotalSlideCount());
+  // input
+  $(":input").inputmask();
+  
+  // $("#phone").inputmask({ mask: "(999) 999-9999" });
 });
 
 // img pop
@@ -23,6 +27,7 @@ $(".test-popup-link").magnificPopup({
   type: "image",
   // other options
 });
+
 
 // menu
 const menuBtn = document.querySelector(".menu-btn");

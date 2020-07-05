@@ -439,3 +439,29 @@ hr {
 .social-icons .mobile-wa {
   display: block;
 }
+
+
+/* input */
+form{
+  display: grid;
+}
+input {
+  display: block;
+  font-family: monospace;
+  /* float: right; */
+}
+label {
+  display: block;
+  /* float: right; */
+}
+div {
+  margin: 0 0 1rem 0;
+}
+
+form h4{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
