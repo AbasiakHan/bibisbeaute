@@ -47,20 +47,85 @@ a {
   justify-content: center;
   top: 0;
   width: 100%;
+  /* height: 20px; */
   z-index: 20;
-  border: 1px solid black;
-  height: 55px;
+  /* border: 1px solid black; */
+  box-shadow: 1px 3px 12px rgba(2, 0, 0, 0.5);
 }
 
+/* menu */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  /* border: 1px solid black; */
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border: 3px solid rgb(139, 52, 52); */
+}
+.menu-btn__burger {
+  width: 17px;
+  height: 2px;
+  background: #000000;
+  border-radius: 40%;
+  box-shadow: 0 2px 5px var(--header-back);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 2px;
+  background: #000000;
+  border-radius: 40%;
+  box-shadow: 0 2px 5px var(--header-back);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
 .header .header-upper {
   background: var(--primary-back);
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
-  padding: 4px 2.85rem 0;
+  /* padding: 4px 2.85rem 0; */
+  align-items: center;
 }
 
 .header-announce {
-  margin-top: 55px;
+  margin-top: 60px;
   width: 100%;
   display: block;
   text-align: center;
@@ -149,7 +214,7 @@ a {
   padding-top: 1rem;
   margin-bottom: 0.8125rem;
   font-family: "Great Vibes", cursive;
-  font-size: 2.625rem;
+  font-size: 2.3rem;
   /* line-height: 2rem; */
   color: black;
   text-transform: capitalize;
@@ -185,67 +250,6 @@ a {
 
 .button-link__title {
   padding: 5px 10px;
-}
-
-/* menu */
-.menu-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  /* border: 1px solid black; */
-}
-
-.menu-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 55px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  /* border: 3px solid rgb(139, 52, 52); */
-}
-.menu-btn__burger {
-  width: 17px;
-  height: 2px;
-  background: #000000;
-  border-radius: 40%;
-  box-shadow: 0 2px 5px var(--header-back);
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 2px;
-  background: #000000;
-  border-radius: 40%;
-  box-shadow: 0 2px 5px var(--header-back);
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger::before {
-  transform: translateY(-8px);
-}
-.menu-btn__burger::after {
-  transform: translateY(8px);
-}
-/* ANIMATION */
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 main {
@@ -440,28 +444,57 @@ hr {
   display: block;
 }
 
-
 /* input */
-form{
+form {
   display: grid;
+  font-family: var(--robotoCondensed);
 }
+form input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid rgb(218, 218, 218);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form div {
+  margin-bottom: 5px;
+}
+.service {
+  display: grid;
+justify-content: center;
+align-items: center;
+  /* display: block; */
+  /* padding: 0; */
+}
+.service input {
+  width: 20px;
+  display: inline-block;
+  padding-bottom: 5px;;
+}
+/* form:before,
+form:after {
+  box-sizing: border-box;
+} */
 input {
   display: block;
-  font-family: monospace;
+  font-family: var(--robotoCondensed);
   /* float: right; */
 }
+
 label {
-  display: block;
+  display: inline;
   /* float: right; */
 }
-div {
+.form-field {
   margin: 0 0 1rem 0;
 }
 
-form h4{
+form h4 {
   margin: 0;
   padding: 0;
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
