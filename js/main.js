@@ -64,4 +64,5 @@ day.textContent = date.getDate();
 
 month.textContent = monthNames[date.getMonth()];
 
-// magnificPopup
+// simplelightbox
+var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
