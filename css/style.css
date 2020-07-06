@@ -144,8 +144,8 @@ a {
 }
 
 .header-logo {
-  color: #000000;
-  display: flex;
+  /* background-color: #F95EF7; */
+  display: block;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -155,24 +155,23 @@ a {
   /* z-index: 20; */
 }
 
-.icon-bibisbeaute {
-  color: rgb(255, 0, 0);
-  font-size: 12px;
-  line-height: 0;
+.logo-bibisbeaute {
+  display: flex;
+  background: url(/img/bibisbeaute-logo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  margin-top: 9px;
 }
 
-.icon-bibisbeaute:hover {
+/* .icon-bibisbeaute:hover {
   color: rgb(218, 183, 183);
-  font-size: 12px;
-  line-height: 0;
   transition: 1s ease-in-out;
   transform: 0.5s;
-}
-
-/* .icon .logo {
-  width: 50%;
-  height: 40px;
 } */
+
+
 
 .container {
   width: 100%;
@@ -260,7 +259,7 @@ main {
 .footer-container {
   display: grid;
   max-width: 100%;
-  background: #ffcd92;
+  background: #F95EF7;
   font-family: var(--montserrat);
   font-size: 1rem;
 }
@@ -291,7 +290,8 @@ main {
 .footer-copyright {
   display: block;
   max-width: 100%;
-  background: #ffcd92;
+  color: #747474;
+  background: #F95EF7;
   font-family: var(--montserrat);
   font-weight: 400;
   font-size: 0.9rem;
@@ -304,6 +304,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .footer-copy-copy {
@@ -430,10 +431,27 @@ hr {
   height: 300px;
   margin-bottom: 20px;
 }
+#makeover{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(5, 1fr); */
+}
 
-/* utilities */
-#open-modal {
-  display: none;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* display: none; */
+  /* width: 100%; */
+}
+
+.gallery .big img{
+  height: 200px;
+  /* transform: scale(1.15); */
+  /* display: none; */
 }
 
 .social-icons .desk-wa {
