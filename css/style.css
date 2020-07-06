@@ -411,14 +411,7 @@ hr {
 }
 
 #gele {
-  display: block;
-  background: url("/img/banner/gele.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+  position: relative;
 }
 
 #eyebrow {
@@ -445,11 +438,11 @@ hr {
   width: auto;
   height: 300px;
   margin-bottom: 20px;
-   box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
 }
 
 #eyebrow {
-   box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
 }
 
 #makeover {
@@ -460,10 +453,10 @@ hr {
   /* grid-template-columns: repeat(5, 1fr); */
 }
 
-.makeover {
+/* .makeover {
   position: relative;
   width: auto;
-}
+} */
 
 .gallery {
   position: relative;
@@ -475,6 +468,10 @@ hr {
 .gallery a.big-one {
   position: relative;
   max-width: 100%;
+}
+
+a.big-one img {
+  opacity: 1;
 }
 
 .gallery a {
@@ -499,7 +496,7 @@ hr {
 .gallery img:hover {
   opacity: 1;
   transform: scale(1);
-  transition: transform .35s ease-in;
+  transition: transform 0.35s ease-in;
 }
 
 /* .makeover-photo {
