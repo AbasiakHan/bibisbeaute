@@ -438,7 +438,7 @@ hr {
 
 #training {
   position: relative;
-  background: url("/img/banner/training.png");
+  background: url("/img/banner/training-coming-soon.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -498,8 +498,8 @@ hr {
 
 .gallery img:hover {
   opacity: 1;
-  transition: transform .35s ease;
   transform: scale(1);
+  transition: transform .35s ease-in;
 }
 
 /* .makeover-photo {
