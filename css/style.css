@@ -163,6 +163,18 @@ a {
   background-size: contain;
   height: 30px;
   margin-top: 9px;
+  transition: filter 1s ease-in-out;
+  transition-delay: .3s;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+img {
+}
+
+.logo-bibisbeaute:hover {
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
 }
 
 /* .icon-bibisbeaute:hover {
