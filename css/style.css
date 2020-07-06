@@ -169,8 +169,8 @@ a {
   filter: grayscale(0%); /* FF 35+ */
 }
 
-img {
-}
+/* img {
+} */
 
 .logo-bibisbeaute:hover {
   -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
@@ -263,9 +263,6 @@ img {
   padding: 5px 10px;
 }
 
-main {
-  /* max-width: 95%; */
-}
 
 /* footer */
 .footer-container {
