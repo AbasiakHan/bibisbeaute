@@ -419,14 +419,7 @@ hr {
 }
 
 #eyelash {
-  display: block;
-  background: url("/img/banner/eyelash-ext-canvas.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+position: relative;
 }
 
 #training {
@@ -453,28 +446,25 @@ hr {
   /* grid-template-columns: repeat(5, 1fr); */
 }
 
-/* .makeover {
-  position: relative;
-  width: auto;
-} */
 
-.gallery {
+.service-showcase {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
 
-.gallery a.big-one {
+.service-showcase a.big-one {
   position: relative;
   max-width: 100%;
+  /* display: none; */
 }
 
 a.big-one img {
   opacity: 1;
 }
 
-.gallery a {
+.service-showcase a {
   box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
   position: relative;
   max-width: 50%;
@@ -483,7 +473,7 @@ a.big-one img {
   background-color: #000000;
 }
 
-.gallery img {
+.service-showcase img {
   opacity: 0.7;
   position: relative;
   max-width: 100%;
@@ -493,10 +483,10 @@ a.big-one img {
   transform: scale(1.05);
 }
 
-.gallery img:hover {
+.service-showcase img:hover {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.35s ease-in;
+  transition: transform 0.35s ease-in-out;
 }
 
 /* .makeover-photo {

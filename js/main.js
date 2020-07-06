@@ -39,9 +39,12 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.remove("open");
     menuIsOpen = false;
   }
-  var lightbox = $(".gallery a").simpleLightbox({
-    /* options */
-  });
+});
+
+$(function () {
+  const $gallery1 = $("#gallery1 a").simpleLightbox();
+  const $gallery2 = $("#gallery2 a").simpleLightbox();
+  const $gallery4 = $("#gallery4 a").simpleLightbox();
 });
 
 let dayJs = document.querySelector("#day-js");
@@ -64,8 +67,8 @@ let d = new Date();
 
 dayJs.textContent = d.getDate();
 
-monthJs.textContent = (monthNames[d.getMonth()]);
+monthJs.textContent = monthNames[d.getMonth()];
 
-console.log('Mommy')
+console.log("Mommy");
 
 // simplelightbox
