@@ -97,7 +97,7 @@
       rel="stylesheet"
     />
     <!-- magnific popup -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+    <!-- <link rel="stylesheet" href="magnific-popup/magnific-popup.css" /> -->
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: REMOVE THE BIBISBEAUTE LOGO AND THE ICONMOON STYLES-->
@@ -268,35 +268,33 @@
         </ul>
       </div>
     </main>
-    <div class="date">
-      <div id="day"></div>
+    <div class="date-container">
+      <div id="day-js"></div>
       <hr />
-      <div id="month"></div>
+      <div id="month-js"></div>
     </div>
     <section id="gele"></section>
     <section id="eyelash"></section>
-    <section id="eyebrow">
-
-    </section>
+    <section id="eyebrow"></section>
     <section id="makeover">
       <div class="gallery">
         <a href="img/banner/gele2.png" class="big-one"
-          ><img src="img/banner/gele2.png" alt="" title="Gele"
+          ><img src="img/banner/gele2.png" alt=""
         /></a>
 
         <a href="img/ig pics/ig-02-makeover.jpg" class="big"
-          ><img
+          ><!--<img
             class="img-makeover"
             src="img/ig pics/ig-02-makeover.jpg"
             alt="before"
-        /></a>
+        />--></a>
 
         <a href="img/ig pics/ig-03-makeover.jpg" class="big"
-          ><img
+          ><!--<img
             class="img-makeover"
             src="img/ig pics/ig-03-makeover.jpg"
             alt="after"
-        /></a>
+        />--></a>
 
         <a href="img/ig pics/ig-06-makeover.jpg" class="big"
           ><img
@@ -340,123 +338,6 @@
                 >Book a Session</a
               >
             </li>
-            <!-- BOOKING FORM -->
-            <div class="html-code">
-              <div id="book-modal" class="white-popup-block mfp-hide">
-                <!-- <h1>Modal dialog</h1> -->
-
-                <form
-                  action="https://formspree.io/abskn.solutions@gmail.com"
-                  method="POST"
-                >
-                  <div class="form-field">
-                    <h4>BOOK A SESSION</h4>
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      value="Booking Session"
-                    />
-                    <input type="hidden" name="_next" value="/facebook.com" />
-                    <div>
-                      <input
-                        id="name"
-                        placeholder="full name"
-                        name="full-name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input
-                        id="email"
-                        name="_replyto"
-                        placeholder="john@email.com"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input
-                        id="phone"
-                        placeholder="Phone number"
-                        name="phone-number"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input
-                        id="address"
-                        placeholder="address"
-                        name="address"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input
-                        id="city"
-                        placeholder="city"
-                        name="city"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input id="state" placeholder="state" name="state" />
-                    </div>
-                    <div>
-                      <input
-                        type="text"
-                        name="date"
-                        placeholder="date"
-                        onfocus="(this.type='date')"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <input
-                        type="text"
-                        name="date"
-                        placeholder="time"
-                        onfocus="(this.type='time')"
-                      />
-                    </div>
-                    <div class="service">
-                      <h4>Service(s)</h4>
-                      <div class="service-components">
-                        <input value="Gele" type="checkbox" name="Service 1" />
-                        <label for="gele">Gele</label>
-                        <input
-                          value="Eyelash extension"
-                          type="checkbox"
-                          name="Service 2"
-                        />
-                        <label for="eyelash-extension">Eyelash extension</label>
-                        <br />
-                        <input
-                          value="Makeup"
-                          type="checkbox"
-                          name="Service 3"
-                        />
-                        <label for="makeup">Makeup</label>
-                        <input
-                          value="Eyebrow threading"
-                          type="checkbox"
-                          name="Service 4"
-                        />
-                        <label for="eyebrow-threading">Eyebrow threading</label>
-                      </div>
-                    </div>
-
-                    <div>
-                      <input id="persons" placeholder="No. of persons" />
-                    </div>
-                    <div>
-                      <input id="days" placeholder="No. of days" />
-                    </div>
-                    <input type="submit" value="Make a deposit" />
-                    <input type="reset" />
-                  </div>
-                </form>
-                <p><a class="popup-modal-dismiss" href="#">Cancel</a></p>
-              </div>
-            </div>
           </ul>
 
           <!-- contact us -->
@@ -548,6 +429,6 @@
     </script>
     <script src="/js/simple-lightbox.jquery.js"></script>
     <script src="/dist/js/simple-lightbox.js"></script>
-    <script src="/magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- <script src="/magnific-popup/jquery.magnific-popup.js"></script> -->
   </body>
 </html>

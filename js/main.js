@@ -18,16 +18,15 @@ $(document).ready(function () {
   // $("#total").text(autoplaySlider.getTotalSlideCount());
   // // input
   // $(":input").inputmask();
-  
+
   // $("#phone").inputmask({ mask: "(999) 999-9999" });
 });
 
 // img pop
-$(".test-popup-link").magnificPopup({
-  type: "image",
-  // other options
-});
-
+// $(".test-popup-link").magnificPopup({
+//   type: "image",
+//   // other options
+// });
 
 // menu
 const menuBtn = document.querySelector(".menu-btn");
@@ -40,11 +39,13 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.remove("open");
     menuIsOpen = false;
   }
-  var lightbox = $('.gallery a').simpleLightbox({ /* options */ });
+  var lightbox = $(".gallery a").simpleLightbox({
+    /* options */
+  });
 });
 
-let day = document.querySelector("#day");
-let month = document.querySelector("#month");
+let dayJs = document.querySelector("#day-js");
+let monthJs = document.querySelector("#month-js");
 let monthNames = [
   "January",
   "February",
@@ -59,10 +60,12 @@ let monthNames = [
   "November",
   "December",
 ];
-let date = new Date();
+let d = new Date();
 
-day.textContent = date.getDate();
+dayJs.textContent = d.getDate();
 
-month.textContent = monthNames[date.getMonth()];
+monthJs.textContent = (monthNames[d.getMonth()]);
+
+console.log('Mommy')
 
 // simplelightbox
