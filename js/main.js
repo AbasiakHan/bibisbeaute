@@ -15,9 +15,9 @@ $(document).ready(function () {
       $("#current").text(el.getCurrentSlideCount());
     },
   });
-  $("#total").text(autoplaySlider.getTotalSlideCount());
-  // input
-  $(":input").inputmask();
+  // $("#total").text(autoplaySlider.getTotalSlideCount());
+  // // input
+  // $(":input").inputmask();
   
   // $("#phone").inputmask({ mask: "(999) 999-9999" });
 });
@@ -40,6 +40,7 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.remove("open");
     menuIsOpen = false;
   }
+  var lightbox = $('.gallery a').simpleLightbox({ /* options */ });
 });
 
 let day = document.querySelector("#day");
@@ -65,4 +66,3 @@ day.textContent = date.getDate();
 month.textContent = monthNames[date.getMonth()];
 
 // simplelightbox
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });

@@ -466,31 +466,32 @@ hr {
   width: auto;
 }
 
-.makeover-showcase {
+.gallery {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
 
-.makeover-showcase a.big-one {
+.gallery a.big-one {
   position: relative;
   max-width: 100%;
 }
 
-.makeover-showcase a {
+.gallery a {
   position: relative;
   max-width: 50%;
   float: left;
   overflow: hidden;
 }
 
-.makeover-showcase img {
+.gallery img {
   position: relative;
   max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
+  transition: transform .35s ease;
 }
 
 /* .makeover-photo {
