@@ -431,8 +431,15 @@ hr {
   position: relative;
 }
 
-#eyelash {
+#eyelash-gallery {
+  background: url("/img/banner/eyelash-coming-soon.png");
   position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  filter: drop-shadow(0 0 10px #333);
 }
 
 #makeover {
@@ -447,7 +454,6 @@ hr {
   background-position: center;
   width: auto;
   height: 300px;
-  /* margin-bottom: 20px; */
   filter: drop-shadow(0 0 10px #333);
 }
 
@@ -462,7 +468,6 @@ hr {
   background-position: center;
   width: auto;
   height: 300px;
-  /* margin-bottom: 20px; */
   filter: drop-shadow(0 0 10px #333);
 }
 
