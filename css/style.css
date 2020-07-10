@@ -136,7 +136,7 @@ div {
   width: 100%;
   display: block;
   text-align: center;
-  background-color: #ffcd92;
+  background-color: #ffffff;
   font-family: var(--robotoCondensed);
   font-size: 1rem;
   padding: 10px 0;
@@ -146,12 +146,12 @@ div {
   text-transform: uppercase;
 }
 .header-announce p span {
-  color: blue;
+  color: #d600d6;
   padding-right: 5px;
 }
 
 .header-logo {
-  /* background-color: #F95EF7; */
+  background-color: #fcfcfc;
   display: block;
   justify-content: center;
   align-items: center;
@@ -202,6 +202,7 @@ div {
   width: 350px;
   /* height: 610px; */
   /* border-radius: 10px; */
+  background-color: #ffc5ff;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -221,6 +222,7 @@ div {
 
 .details {
   display: flex;
+  /* background-color: #ffc5ff; */
   flex-direction: column;
   align-items: center;
   width: 300px;
@@ -236,6 +238,9 @@ div {
   text-transform: capitalize;
 }
 
+.lSSlideOuter {
+  background-color: #fff8ff;
+}
 .static-button {
   width: 100%;
   font-size: 0.9375rem;
@@ -428,23 +433,46 @@ hr {
 }
 
 #training-gallery {
-  position: relative;
   background: url("/img/banner/training-coming-soon.png");
+  position: relative;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: auto;
   height: 300px;
   margin-bottom: 20px;
-  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
+  filter: drop-shadow(0 0 10px #333);
 }
 
-#eyebrow {
-  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
-  margin-bottom: 50px;
+.one-shot {
+}
+
+#eyebrow-gallery {
+  position: relative;
+  background: url("/img/banner/eyebrow-threading.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #333);
+}
+
+#microblading-gallery {
+  position: relative;
+  background: url("/img/banner/microblading.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 300px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #333);
 }
 
 .service-showcase {
+  filter: drop-shadow(0 0 10px #333);
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -462,7 +490,7 @@ a.big-one img {
 }
 
 .service-showcase a {
-  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49);
+  /* box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.49); */
   position: relative;
   max-width: 50%;
   float: left;
